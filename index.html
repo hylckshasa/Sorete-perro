@@ -114,6 +114,52 @@
         h1 {
             margin-bottom: 20px;
         }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 768px) {
+            #icono-acceso {
+                width: 60px;
+                height: 60px;
+            }
+            #icono-regreso {
+                width: 60px;
+                height: 60px;
+            }
+            iframe {
+                width: 90%;
+                height: 50vw; /* Altura proporcional al ancho */
+            }
+            #imagen1 {
+                height: 100vh; /* Ajustar altura */
+                margin-top: 50px; /* Reducir margen */
+            }
+            #imagen2 {
+                height: 80vh; /* Ajustar altura */
+            }
+        }
+
+        /* Media Query para pantallas grandes */
+        @media (min-width: 1200px) {
+            #icono-acceso {
+                width: 100px;
+                height: 100px;
+            }
+            #icono-regreso {
+                width: 100px;
+                height: 100px;
+            }
+            iframe {
+                width: 70%;
+                height: 450px;
+            }
+            #imagen1 {
+                height: 250vh; /* Incrementar altura para pantallas grandes */
+                margin-top: 200px; /* Espaciado adicional */
+            }
+            #imagen2 {
+                height: 120vh;
+            }
+        }
     </style>
 </head>
 <body>
