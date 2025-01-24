@@ -115,15 +115,21 @@
             margin-bottom: 20px;
         }
     </style>
-    <script>
-        // Redirección al enlace principal
-        (function redirigirAlPrincipal() {
-            const enlacePrincipal = "https://srtprr.github.io/Sorete-perro/";
+   <script>
+    window.onload = function() {
+        // Verificamos si ya se ha hecho la redirección
+        const enlacePrincipal = "https://srtprr.github.io/Sorete-perro/";
+        
+        // Verificamos si la página ya ha sido redirigida
+        if (!localStorage.getItem("redirigido")) {
+            // Si no se ha redirigido, redirigimos y almacenamos la marca
             if (window.location.href !== enlacePrincipal) {
+                localStorage.setItem("redirigido", "true");
                 window.location.href = enlacePrincipal;
             }
-        })();
-    </script>
+        }
+    }
+</script>
 </head>
 <body>
     <!-- Pantalla Inicial -->
